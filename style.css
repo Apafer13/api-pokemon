@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 body{
     background-color: #ffff9f;
     background-image: url(img/image.png);
@@ -32,9 +33,9 @@ body::before {
     font-style: italic;
 }
 #btn{
-    background-color: #007bff; 
+    background-color: #78b0ed76; 
+    border: 2px solid #0056b3; 
     color: #fff;
-    border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
@@ -99,11 +100,13 @@ body::before {
     display: grid;
     place-items: center;
     color: #f57c00; 
-    padding: 2%;
-    text-decoration: underline ;
+    text-decoration: underline;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.832);
+    line-height: 8;
 }
 .tarjeta{
     padding: .2%;
+    font-family: 'Pokemon Solid', sans-serif;
 }
 #video{
     background-color:#ff00008d;
@@ -181,17 +184,16 @@ iframe{
     box-shadow: 0 0 .4px .3px white;
 }
 #back{
-    background-color: #007bff; 
+    background-color: #78b0ed76; 
+    border: 2px solid #0056b3; 
     color: #fff;
-    border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     margin-left: 1%;
     transition: background-color 0.3s ease;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 0 5% 5%;
     
 }
 #back:hover{

@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 })
+
 function showData(data){
     let htmlContentToAppend = "";
     let cont = document.getElementById('contenedor')
@@ -60,10 +61,8 @@ function showData(data){
         cont.innerHTML = htmlContentToAppend;
 
 }
-let btn2 = document.getElementById('back')
-btn2.addEventListener('click', function(){
-    let cont = document.getElementById('contenedor')
-    cont.innerHTML = `<div class="tarjeta">    
+function addData(){
+    return `<div class="tarjeta">    
     <div id="video">
         <iframe width="930" height="523" src="https://www.youtube.com/embed/9h4E3TuL6ug" title="Primal Groudon vs Primal Kyogre vs Mega Rayquaza vs Deoxys - Pokemon AMV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <hr class="separadorVideo">
@@ -99,4 +98,9 @@ btn2.addEventListener('click', function(){
         <p class="parrafo">  Además, conecta con otros entrenadores, comparte tus experiencias y participa en desafíos y eventos exclusivos. ¡Prepárate para embarcarte en una aventura Pokémon como nunca antes! ¡Atrapa 'em todos y únete a la diversión en nuestra comunidad Pokémon!</p>
     </div>
 </div>  `
+}
+let btn2 = document.getElementById('back')
+btn2.addEventListener('click', function(){
+    let cont = document.getElementById('contenedor')
+    cont.innerHTML = addData()
 })
